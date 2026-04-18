@@ -1,0 +1,27 @@
+{
+    "name": "lazuardhi/project-portfolio",
+    "type": "project",
+    "description": "A simple professional portfolio website built with Laravel MVC.",
+    "require": {
+        "php": "^8.2",
+        "laravel/framework": "^11.0"
+    },
+    "require-dev": {
+        "laravel/pint": "^1.13"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/"
+        }
+    },
+    "scripts": {
+        "post-root-package-install": [
+            "@php -r \"file_exists('.env') || copy('.env.example', '.env');\""
+        ],
+        "dev": [
+            "npm run dev"
+        ]
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}
